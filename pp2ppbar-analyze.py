@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-
+#!/usr/bin/env python3
 import pandas as pd
 import matplotlib.pyplot as plt
 # import matplotlib
@@ -37,7 +36,6 @@ rc('figure', **figure)
 rc('savefig', **savefig)
 rc('agg', **agg)
 
-
 def read_data(filename):
 
     return pd.read_csv(
@@ -49,8 +47,8 @@ def read_data(filename):
     )
 
 # particles masses in GeVs
-proton_mass  = 0.938269998 # 0.938272046 GeV
-neutron_mass = 0.93957 # 0.939565379 GeV
+proton_mass  = 0.938269998 # 0.938272046 GeV/c^2
+neutron_mass = 0.93957 # 0.939565379 GeV/c^2
 
 def plot_graphs(df, filename="images/tmp.pdf"):
 
